@@ -27,7 +27,7 @@ Garages<br>
 Smoke free community<br>
 Pet friendly<br>
 Disability Access<br>
- <th><a href=CustomerHomePage.jsp><button type="button">Select</button></a></th>
+ <th><a href=CustomerTransaction.jsp><button type="button">Select</button></a></th>
  <th><a href=ApartmentSearchResult.jsp><button type="button">Back</button></a></th>
  <th><a href=CustomerHomePage.jsp><button type="button">Home</button></a></th>
 </body>
