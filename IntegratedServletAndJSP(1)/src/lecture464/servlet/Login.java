@@ -60,10 +60,8 @@ public class Login extends HttpServlet {
 				if(!pword.equals(password)) {
 					response.sendRedirect("Register.jsp"); // Link-redirection
 				} else {
-					request.setAttribute("username", userName);
-					RequestDispatcher dis =getServletContext().getRequestDispatcher("/CustomerHomePage.jsp");		
-					dis.forward(request,response);
-					//response.sendRedirect("CustomerHomePage.jsp"); // Link-redirection
+					request.getSession().setAttribute("username", userName);
+					response.sendRedirect("CustomerHomePage.jsp"); // Link-redirection
 					
 				}
 			}

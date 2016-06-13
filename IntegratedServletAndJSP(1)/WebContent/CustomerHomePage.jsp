@@ -10,8 +10,8 @@
 <h1> Welcome to the Home Page</h1>
 <h2> Please Enter the requirement</h2>
 
-<form action	=Home>
-Hello!! <%= request.getAttribute("username") %><br>
+<form name=form1 action	=Home>
+Hello!! <%= request.getSession().getAttribute("username") %><br>
 Moving Date: <input type=text name=movingDate> (MM/DD/YYYY) <br>
 Range of Price: <input type=text name=minPrice> To <input type=text name=maxPrice> <br>
 Location: <input type=text name=location><br>
@@ -26,6 +26,9 @@ Apartment Type:<select name=type>
 <input type=submit value=Search> <br> 
 <br>
 <br>
+
+
+<input type=button value=ManageApplication type=submit onclick="form1.action='ManageApplication.jsp';form1.submit();"><br>
 
 <!-- Navigation links --> 
 <a href="Welcome.jsp"> Logout</a> <br>
