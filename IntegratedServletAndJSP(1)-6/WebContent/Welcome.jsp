@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1> A Simple MVC Web Application</h1>
+<h1> Apartment Finder Web Application</h1>
 <h2> Login here</h2>
 
 <form action	=Login method="POST" onsubmit="return validate(this)">

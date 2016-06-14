@@ -24,7 +24,7 @@
 	return luckyNumber;
 }
 %>
-   <h1> A Simple MVC Web Application</h1>
+   <h1> Apartment Search Result</h1>
    <table >
    <tr>
    <th>Landlord </th>

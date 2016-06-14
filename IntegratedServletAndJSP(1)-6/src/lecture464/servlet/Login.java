@@ -61,9 +61,9 @@ public class Login extends HttpServlet {
 					response.sendRedirect("Register.jsp"); // Link-redirection
 				} else {
 					request.setAttribute("username", userName);
+					request.getSession().setAttribute("userName", userName);
 					RequestDispatcher dis =getServletContext().getRequestDispatcher("/CustomerHomePage.jsp");		
 					dis.forward(request,response);
-					//response.sendRedirect("CustomerHomePage.jsp"); // Link-redirection
 					
 				}
 			}

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> A Simple MVC Web Application</h1>
+<h1> View and Apply</h1>
 
 <h2>Amenities</h2>
 Air Conditioning<br>

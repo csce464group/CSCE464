@@ -9,11 +9,12 @@
 <body>
 <h1>Cancellation Confirm!</h1>
 <th>Congratulation! Your application has been cancelled.</th><br>
+<th>Your Refund Amount is $10.
 <form name=form1 action="CustomerHomePage.jsp">
-<input type=button value=Home type=submit onclick="form1.action='CustomerHomePage.jsp';form1.submit();"></input><br>
 
+<input type=submit value="Home"><br>
+<a href="ManageApplication.jsp"> Manage Application<br>
+<a href="Welcome.jsp"> Logout
 </form>
- <a href="ManageApplication.jsp"> go to manage application</a> <br>
-   <a href="Welcome.jsp"> Logout</a> <br>
 </body>
 </html>

@@ -8,74 +8,26 @@
 </head>
 <body>
 <h1>Manage Your Applications</h1>
-<%!
-    String[]  landlord ={"sunjundashabi", "sunjunershabi","sunjunsanshabi","sunjunsishabi"};
-    String[]  address  ={"1415 North 22 street","1416 North 23 street","1417 North 23 street","UNL"};
-    String[]  apartment ={"one room","two rooms", "three rooms", "studio"};
-    int[] area ={50,100, 200,300};
-    String[] rating={"bad","so-so","excellent","good"};
-    int[]  price={100,200,300,400};
-%>
-<%!
-    public int generateLuckyNumber() {	
-	int luckyNumber = (int)(Math.random()*3);
-	return luckyNumber;
-}
-%>
-   <h1> A Simple MVC Web Application</h1>
-   <table >
-   <tr>
-   <th>Landlord </th>
-   <th>Address </th>
-   <th>Apartment </th>
-   <th>Area </th>
-   <th>Rating </th>
-   <th>Price </th>
-   </tr>
-   <br>
-   <tr>
-   <th> 1</th>
-   <th> <%= landlord[0]%></th>
-   <th> <%= address[0]%></th>
-   <th> <%= apartment[0]%></th>
-   <th> <%= area[0]%></th>
-   <th> <%= rating[0]%></th>
-   <th> <%= price[0]%></th>
-   <th><a href=ApplyAndView.jsp><button type="button">View and Apply</button></a></th>
-   </tr>
-   <br>
-   
-   <tr>
-   <th> 2</th>
-   <th> <%= landlord[1]%></th>
-   <th> <%= address[1]%></th>
-   <th> <%= apartment[1]%></th>
-   <th> <%= area[1]%></th>
-   <th> <%= rating[1]%></th>
-   <th> <%= price[1]%></th>
-   <th><a href=ApplyAndView.jsp><button type="button">View and Apply</button></a></th>
-   </tr>
-   <br>
-   <tr>
-   <th> 3</th>
-   <th> <%= landlord[2]%></th>
-   <th> <%= address[2]%></th>
-   <th> <%= apartment[2]%></th>
-   <th> <%= area[2]%></th>
-   <th> <%= rating[2]%></th>
-   <th> <%= price[2]%></th>
-   <th><a href=ApplyAndView.jsp><button type="button">View and Apply</button></a></th>
-   </tr>
-   <br>
-   </table>
+	<% 
+		String[] apps={"app1","app2","app3"};
+		if(apps.length!=0){	
+			out.print("<form ACTION=\"CancelApplication.jsp\">\n"+
+					"<table cellspacing=\"5\" border=\"0\">\n"+
+					"<th>Selection</th>\n"+
+					"<th>Applications</th>\n");
+			for(int i=0;i<apps.length;i++){
+			    out.println("<tr><td><input type=radio name=appcancel value="+apps[i]+"></td>");
+			    out.print("<td>" + apps[i] + "</td></tr>\n");
+			}
+			out.print("</table>\n"+ 
+					"<input type=submit value='Cancel Selected Application'>"+
+					"</form>");
+		}
+		else out.print("No Applications");
+			
+	%>
 
-<a href=CustomerHomePage.jsp><button type="button">Back to Home Page</button></a>
-<a href=CancelApplication.jsp><button type="button">Cancel Application</button></a>
+<a href=CustomerHomePage.jsp><button type="button">Home</button></a>
 
 </body>
-
-<style>
-table{ border-collapse:collapse;}
-table th,table td{ border:1px solid #ccc;}
-</style>
 </html>
