@@ -44,7 +44,7 @@
    <br>
    <!-- Navigation links --> 
 <a href="Welcome.jsp"> Logout</a> <br>
-<a href="CustomerHomePage.jsp"> Manage Application </a> <br>
+<a href="ManageApplication.jsp"> Manage Application </a> <br>
 <form>
 
 
