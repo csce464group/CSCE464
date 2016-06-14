@@ -20,7 +20,7 @@
 			    out.println("<tr><td><input type=radio name=appcancel value="+apps[i]+"></td>");
 			    out.print("<td>" + apps[i] + "</td></tr>\n");
 			}
-			out.print("</table>\n"+
+			out.print("</table>\n"+ 
 					"<input type=submit value='Cancel Selected Application'>"+
 					"</form>");
 		}
@@ -28,7 +28,7 @@
 			
 	%>
 
-<a href=CustomerHomePage.jsp><button type="button">Back to Home Page</button></a>
+<a href=CustomerHomePage.jsp><button type="button">Home</button></a>
 
 </body>
 </html>
