@@ -28,9 +28,8 @@ Apartment Type:<select name=type>
 <br>
 
 <!-- Navigation links --> 
-<a href="ManageApplication.jsp"> go to manage application</a> <br>
+<a href="ManageApplication.jsp"> Manage Application</a> <br>
 <a href="Welcome.jsp"> Logout</a> <br>
-<a href="Register.jsp"> New User </a> <br>
 
 
 </form>
