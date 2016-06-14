@@ -86,18 +86,19 @@ Name: Frist Name<input type=text name=firstName> Last Name <input type=text name
 Billing Address: <input type=text name=bAddress><br>
 <br>
 <br>
-<a href=Confirmation.jsp><button type="button">Confirm Payment</button>
-<a href=ApartmentSearchResult.jsp><button type="button">Cancel Payment</button><br>
+
 
 <br>
 <br>
 
 <!-- Navigation links --> 
-<a href="Welcome.jsp"> Logout</a> <br>
-<a href="CustomerHomePage.jsp"> Manage Application </a> <br>
 
 
 </form>   
 
+<a href="Confirmation.jsp"><button type="button">Confirm Payment</button></a>
+<a href="ApartmentSearchResult.jsp"><button type="button">Cancel Payment</button></a><br>
+<a href="Welcome.jsp"> Logout</a> <br>
+<a href="CustomerHomePage.jsp"> Manage Application </a> <br>
 </body>
 </html>

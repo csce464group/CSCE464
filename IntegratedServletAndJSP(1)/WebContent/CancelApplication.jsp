@@ -12,9 +12,11 @@
 Do you really want to cancel the Application?<br>
 <form name=form1 action="CancellationConfirmation.jsp">
 <input type=submit value="Confirm Cancellation">
-<input type=button value="Discard Cancellation" type=submit onclick="form1.action='CustomerHomePage.jsp';form1.submit();">
-<input type=button value="Manage Your Applications" type=submit onclick="form1.action='ManageApplication.jsp';form1.submit();">
-<input type=button value="Logout" type=submit onclick="form1.action='Welcome.jsp';form1.submit();">
+<input type=button value="Discard Cancellation" type=submit onclick="form1.action='CustomerHomePage.jsp';form1.submit();"><br>
+
+<a href="ManageApplication.jsp"> Manage Your Applications<br>
+<a href="Welcome.jsp"> Logout
+
 </form>
 
 </body>

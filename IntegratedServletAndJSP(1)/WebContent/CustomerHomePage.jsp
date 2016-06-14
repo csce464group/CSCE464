@@ -28,12 +28,10 @@ Apartment Type:<select name=type>
 <br>
 
 
-<input type=button value=ManageApplication type=submit onclick="form1.action='ManageApplication.jsp';form1.submit();"><br>
+<input type=button value="Manage Application" type=submit onclick="form1.action='ManageApplication.jsp';form1.submit();"><br>
 
 <!-- Navigation links --> 
 <a href="Welcome.jsp"> Logout</a> <br>
-<a href="Register.jsp"> New User </a> <br>
-
 
 </form>
 
